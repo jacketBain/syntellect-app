@@ -1,0 +1,33 @@
+.popup_item_wrapper{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    border-radius: 8px;
+
+    &_image_block{
+        max-width: 50px;
+        min-width: 50px;
+    }
+
+    &_text_block{
+        &_fullname{
+            font-size: 24px;
+        }
+        &_name{
+            font-size: 18px;
+        }
+    }
+
+    &:hover{
+        background-color: #fcb6b7;
+    }
+
+    &:active{
+        background-color: #fc9d9e;
+    }
+
+    p{
+        margin: 0;
+    }
+}
