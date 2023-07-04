@@ -1,10 +1,12 @@
-import { useStore } from "../../store/store";
-import { observer } from "mobx-react-lite";
-import { useDebounce } from "../../utils/hooks/useDebounce";
 import { useEffect, useMemo, useState } from "react";
-import { CountryInfo, getCountryByName } from "../../api/apiService";
+import { observer } from "mobx-react-lite";
+
 import HelpPopup from "./components/HelpPopup";
 import PopupItem from "./components/PopupItem";
+
+import { CountryInfo, getCountryByName } from "../../api/apiService";
+import { useStore } from "../../store/store";
+import { useDebounce } from "../../utils/hooks/useDebounce";
 import { IAutocomplete } from "./interface";
 
 import "./styles.scss"

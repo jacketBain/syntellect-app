@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import "./App.scss";
 import ControllsLayout from "./components/ControllsLayout";
 import { useStore } from "./store/store";
 import { IButton } from "./components/ControllsLayout/interface";
 import Autocomplete from "./components/Autocomplete";
+
+import "./App.scss";
 
 function App() {
 

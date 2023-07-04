@@ -1,12 +1,13 @@
 import { useStore } from "../../store/store";
-import { IButton, IControllsLayout } from "./interface";
-import Button from "./components/Button";
 import { observer } from "mobx-react-lite";
+import { IButton, IControllsLayout } from "./interface";
+
+import Button from "./components/Button";
 
 import "./styles.scss"
 
 const ControllsLayout = ({ buttons }: IControllsLayout) => {
-  
+
   const { controlStore } = useStore();
 
   const mapButtons = (side: string) => {
